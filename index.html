@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turning Village Hands into a Global Brand — A Proposal by Tayyeba Khan for TT Global Foundation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,500;1,700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   TURNING VILLAGE HANDS INTO A GLOBAL BRAND
+   A proposal by Tayyeba Khan · For TT Global Foundation
+   Palette: cream / terracotta / sage / gold / warm dark
+   ============================================================ */
+:root{
+  --cream:#F7F1E6;
+  --cream2:#EFE5D3;
+  --ink:#33291F;
+  --ink-soft:#5C5044;
+  --terra:#C05B3C;
+  --terra-d:#96432B;
+  --sage:#7C8B6F;
+  --sage-d:#39412F;
+  --gold:#C99A3C;
+  --dark:#26211C;
+  --dark2:#312A23;
+  --line:rgba(51,41,31,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{
+  font-family:'Poppins',sans-serif;
+  font-weight:300;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.7;
+}
+img{max-width:100%;display:block}
+::selection{background:var(--terra);color:var(--cream)}
+
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:800;line-height:1.12;color:var(--ink)}
+section{position:relative;padding:clamp(84px,13vh,150px) 0}
+.container{width:min(1140px,90vw);margin:0 auto}
+
+/* ---------------- chapter headings ---------------- */
+.chap-head{max-width:820px;margin-bottom:clamp(40px,6vh,70px)}
+.chap-no{
+  display:inline-block;font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;
+  font-weight:600;color:var(--terra);border:1px solid var(--terra);
+  padding:.45em 1.1em;border-radius:999px;margin-bottom:22px;background:rgba(192,91,60,.06)
+}
+.chap-head h2{font-size:clamp(2.1rem,4.6vw,3.6rem);letter-spacing:-.01em}
+.chap-head .lead{
+  font-family:'Playfair Display',serif;font-style:italic;font-weight:500;
+  font-size:clamp(1.05rem,2vw,1.35rem);color:var(--ink-soft);margin-top:14px
+}
+.dark-sec .chap-head h2{color:var(--cream)}
+.dark-sec .chap-head .lead{color:#CDBFA9}
+.dark-sec .chap-no{color:var(--gold);border-color:var(--gold);background:rgba(201,154,60,.08)}
+
+/* ---------------- stitch dividers ---------------- */
+.stitch{height:60px;margin:-10px auto;width:min(1140px,90vw);pointer-events:none}
+.stitch svg{width:100%;height:100%}
+.stitch path{
+  fill:none;stroke:var(--terra);stroke-width:3;stroke-linecap:round;
+  stroke-dasharray:14 12;opacity:.75
+}
+
+/* ============================================================
+   SPINE — the thread progress (left side)
+   ============================================================ */
+#spine{position:fixed;left:26px;top:0;height:100vh;width:2px;z-index:60}
+#spine .thread{position:absolute;inset:0;background:var(--line);border-radius:2px}
+#spine .thread-fill{position:absolute;inset:0;background:var(--terra);border-radius:2px;transform-origin:top}
+#spine .ball{
+  position:absolute;left:50%;top:0;width:18px;height:18px;margin-left:-9px;margin-top:-9px;
+  border-radius:50%;background:var(--terra);border:3px solid var(--cream);
+  box-shadow:0 2px 10px rgba(150,67,43,.45)
+}
+#spine .dots{position:absolute;inset:0}
+#spine .dot{
+  position:absolute;left:50%;transform:translate(-50%,-50%);
+  width:11px;height:11px;border-radius:50%;background:var(--cream);
+  border:2px solid var(--ink-soft);text-decoration:none;transition:.3s
+}
+#spine .dot:hover,#spine .dot.active{background:var(--terra);border-color:var(--terra);transform:translate(-50%,-50%) scale(1.5)}
+#spine .dot span{
+  position:absolute;left:22px;top:50%;transform:translateY(-50%);
+  white-space:nowrap;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:500;color:var(--ink-soft);background:var(--cream);padding:2px 8px;border-radius:6px;
+  opacity:0;pointer-events:none;transition:.3s;border:1px solid var(--line)
+}
+#spine .dot:hover span,#spine .dot.active span{opacity:1}
+@media(max-width:1000px){#spine{display:none}}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:90px 6vw;overflow:hidden}
+.hero-rings{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}
+.hero-rings span{position:absolute;border-radius:50%;border:2px dashed rgba(192,91,60,.28)}
+.hero-rings span:nth-child(1){width:min(72vmin,620px);height:min(72vmin,620px);animation:spin 90s linear infinite}
+.hero-rings span:nth-child(2){width:min(52vmin,450px);height:min(52vmin,450px);border-color:rgba(201,154,60,.3);animation:spin 60s linear infinite reverse}
+.hero-rings span:nth-child(3){width:min(30vmin,260px);height:min(30vmin,260px);border-color:rgba(124,139,111,.35);animation:spin 45s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.eyebrow{
+  font-size:.74rem;letter-spacing:.34em;text-transform:uppercase;font-weight:600;
+  color:var(--terra);margin-bottom:30px
+}
+.hero-title{font-size:clamp(2.4rem,7.5vw,6rem);letter-spacing:-.02em;line-height:1.08}
+.hero-title .line{display:block;overflow:hidden;padding:0 .08em}
+.hero-title .line>span{display:inline-block}
+.hero-title em{font-style:italic;font-weight:500;color:var(--terra)}
+.hero-sub{
+  max-width:600px;margin-top:30px;font-size:clamp(1rem,1.8vw,1.15rem);color:var(--ink-soft)
+}
+.hero-byline{
+  margin-top:24px;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+  font-weight:500;color:var(--ink-soft)
+}
+.hero-byline b{color:var(--terra);font-weight:600;letter-spacing:.18em}
+.scroll-cue{
+  position:absolute;bottom:34px;left:50%;transform:translateX(-50%);
+  font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;font-weight:500;color:var(--ink-soft)
+}
+.scroll-cue .cue-arrow{display:block;text-align:center;font-size:1.1rem;margin-top:6px;animation:bounce 1.8s ease-in-out infinite;color:var(--terra)}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(9px)}}
+
+/* ============================================================
+   CH1 — VILLAGE
+   ============================================================ */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);align-items:start}
+.two-col p{margin-bottom:1.1em;font-size:1.02rem}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+.stat-card{
+  background:#fff;border:1px solid var(--line);border-radius:20px;padding:34px 26px;text-align:center;
+  box-shadow:0 10px 30px rgba(51,41,31,.06)
+}
+.stat-card .big{
+  font-family:'Playfair Display',serif;font-weight:800;
+  font-size:clamp(2.4rem,4.5vw,3.4rem);color:var(--terra);line-height:1
+}
+.stat-card .lbl{font-size:.82rem;letter-spacing:.06em;color:var(--ink-soft);margin-top:10px;text-transform:uppercase;font-weight:500}
+.pullquote{
+  margin:70px auto 0;max-width:760px;text-align:center;
+  font-family:'Playfair Display',serif;font-style:italic;font-weight:500;
+  font-size:clamp(1.4rem,3vw,2.1rem);color:var(--ink);line-height:1.4
+}
+.pullquote::before{content:"“";display:block;font-size:4.5rem;color:var(--gold);line-height:.4;margin-bottom:18px}
+@media(max-width:760px){
+  .two-col{grid-template-columns:1fr}
+  .stat-row{grid-template-columns:1fr;gap:14px}
+}
+
+/* ============================================================
+   THE TEACHER — the hand behind the thread
+   ============================================================ */
+.teacher-sec{
+  background:linear-gradient(180deg,var(--cream) 0%,var(--cream2) 100%);
+  text-align:center;
+  padding:clamp(80px,12vh,130px) 0;
+  position:relative;
+  overflow:hidden;
+}
+.teacher-sec::before,
+.teacher-sec::after{
+  content:"";
+  position:absolute;left:50%;transform:translateX(-50%);
+  width:min(320px,60vw);height:2px;
+  background:repeating-linear-gradient(90deg,var(--terra) 0 12px,transparent 12px 24px);
+  opacity:.5;
+}
+.teacher-sec::before{top:36px}
+.teacher-sec::after{bottom:36px}
+.teacher-wrap{max-width:680px;margin:0 auto;position:relative;z-index:2}
+.teacher-portrait{
+  position:relative;width:200px;height:200px;margin:26px auto 28px;
+  border-radius:50%;padding:9px;border:2px dashed var(--terra);
+  background:var(--cream);
+  box-shadow:0 18px 44px rgba(150,67,43,.14);
+  transition:transform .5s ease;
+}
+.teacher-portrait:hover{transform:scale(1.03)}
+.teacher-portrait img{
+  width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;
+}
+.teacher-portrait.no-photo{
+  background:linear-gradient(135deg,#F3E3D3,#E8C9B4);
+}
+.teacher-portrait.no-photo::after{
+  content:"👩‍🎨";position:absolute;inset:9px;border-radius:50%;
+  display:grid;place-items:center;font-size:4rem;
+}
+.portrait-badge{
+  position:absolute;bottom:2px;right:2px;
+  background:var(--terra);color:var(--cream);
+  font-family:'Poppins',sans-serif;font-size:.66rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;
+  padding:.6em 1em;border-radius:999px;
+  border:3px solid var(--cream);
+  box-shadow:0 4px 14px rgba(150,67,43,.3);
+}
+.teacher-name{
+  font-size:clamp(2.4rem,5.2vw,3.6rem);letter-spacing:-.01em;
+  margin-bottom:8px;
+}
+.teacher-role{
+  font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;
+  font-weight:500;color:var(--terra);margin-bottom:26px;
+}
+.teacher-quote{
+  font-family:'Playfair Display',serif;font-style:italic;
+  font-size:clamp(1.05rem,2.1vw,1.3rem);color:var(--ink-soft);
+  line-height:1.6;max-width:560px;margin:0 auto 30px;
+  position:relative;
+  padding:0 6px;
+}
+.cred-pills{
+  display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:30px;
+}
+.cred-pills span{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid var(--line);
+  border-radius:999px;padding:.6em 1.1em;
+  font-size:.82rem;font-weight:500;color:var(--ink);
+  box-shadow:0 4px 12px rgba(51,41,31,.05);
+  transition:transform .3s, box-shadow .3s;
+}
+.cred-pills span:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(51,41,31,.1)}
+.cred-pills i{font-style:normal;font-size:1rem}
+.teacher-sig{
+  font-family:'Playfair Display',serif;font-style:italic;
+  font-size:1.1rem;color:var(--terra);
+  letter-spacing:.02em;
+}
+.teacher-sig::before{
+  content:"— ";opacity:.6;
+}
+@media(max-width:600px){
+  .teacher-portrait{width:160px;height:160px}
+  .teacher-sec::before,.teacher-sec::after{display:none}
+}
+
+/* ============================================================
+   CH2 — TREASURE (proof chips with product images)
+   ============================================================ */
+#treasure{background:var(--cream2)}
+.chip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.chip{
+  background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;text-align:center;
+  box-shadow:0 8px 24px rgba(51,41,31,.05);transition:transform .35s, box-shadow .35s;
+  overflow:hidden
+}
+.chip:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(51,41,31,.12)}
+.chip-img{
+  height:150px;border-radius:12px;overflow:hidden;margin-bottom:14px;
+  background:linear-gradient(135deg,#F3E3D3,#E8C9B4);
+  display:grid;place-items:center;position:relative
+}
+.chip-img img{width:100%;height:100%;object-fit:cover;display:block}
+.chip-img .fallback{font-size:2.4rem}
+.chip .nm{font-size:.85rem;font-weight:500;color:var(--ink);margin-top:4px;line-height:1.3}
+.chip .pr{font-family:'Playfair Display',serif;font-weight:800;font-size:1.45rem;color:var(--terra);margin-top:6px}
+.chip .src{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--sage);font-weight:500;margin-top:6px}
+.kicker{
+  margin-top:60px;display:inline-block;background:var(--ink);color:var(--cream);
+  font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1.15rem,2.4vw,1.6rem);
+  padding:.7em 1.3em;border-radius:16px
+}
+
+/* ============================================================
+   CH3 — WORLD (dark)
+   ============================================================ */
+#world{background:var(--dark);color:#E8DCC8}
+#world h2{color:var(--cream)}
+.metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px}
+.metric{
+  background:var(--dark2);border:1px solid rgba(201,154,60,.25);border-radius:20px;padding:32px 26px
+}
+.metric .num{
+  font-family:'Playfair Display',serif;font-weight:800;
+  font-size:clamp(2.2rem,4vw,3rem);color:var(--gold);line-height:1
+}
+.metric .cap{font-size:.85rem;color:#C4B49B;margin-top:10px}
+.chart-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(30px,5vw,70px);margin-top:70px;align-items:end}
+.bars{
+  display:flex;align-items:flex-end;gap:clamp(10px,2.4vw,26px);height:280px;
+  border-bottom:2px solid rgba(201,154,60,.35);padding:0 8px
+}
+.bar{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%}
+.bar i{
+  display:block;width:100%;background:linear-gradient(180deg,var(--gold),var(--terra));
+  border-radius:8px 8px 0 0;transform-origin:bottom;
+  box-shadow:0 -6px 20px rgba(201,154,60,.25)
+}
+.bar b{font-size:.72rem;font-weight:500;color:#C4B49B;margin-bottom:8px;letter-spacing:.05em}
+.bar .v{font-family:'Playfair Display',serif;font-weight:700;color:var(--cream);font-size:.85rem;margin-bottom:6px}
+.why-list{list-style:none;display:grid;gap:16px}
+.why-list li{
+  background:var(--dark2);border:1px solid rgba(232,220,200,.12);border-radius:14px;
+  padding:16px 18px;display:flex;gap:14px;align-items:flex-start;font-size:.95rem;color:#E8DCC8
+}
+.why-list .wi{font-size:1.4rem;line-height:1.2}
+.why-list b{display:block;font-weight:600;color:var(--gold);font-size:.9rem;margin-bottom:2px}
+@media(max-width:860px){.chart-wrap{grid-template-columns:1fr}}
+
+/* ============================================================
+   CH4 — COLLECTION (horizontal, product images)
+   ============================================================ */
+#collection{padding:0;height:100vh;overflow:hidden;background:var(--cream)}
+.coll-pin{height:100vh;display:flex;flex-direction:column;justify-content:center}
+.coll-head{padding:0 6vw;margin-bottom:34px}
+.coll-head h2{font-size:clamp(1.9rem,3.6vw,3rem)}
+.coll-head .lead{font-family:'Playfair Display',serif;font-style:italic;color:var(--ink-soft);font-size:1.1rem;margin-top:8px}
+#collTrack{display:flex;gap:26px;padding:10px 6vw 30px;will-change:transform}
+.coll-card{
+  position:relative;flex:0 0 auto;width:310px;background:#fff;border:1px solid var(--line);
+  border-radius:22px;overflow:hidden;box-shadow:0 12px 32px rgba(51,41,31,.08)
+}
+.coll-card .tile{
+  height:200px;display:grid;place-items:center;font-size:4rem;
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#F3E3D3,#E8C9B4)
+}
+.coll-card .tile img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  transition:transform .6s ease
+}
+.coll-card:hover .tile img{transform:scale(1.06)}
+.tile-emoji{position:relative;font-size:4rem;opacity:.9}
+.tile.g0{background:linear-gradient(135deg,#F3E3D3,#E8C9B4)}
+.tile.g1{background:linear-gradient(135deg,#E7EBDD,#CFD8C2)}
+.tile.g2{background:linear-gradient(135deg,#F2E7CF,#E4CFA1)}
+.tile.g3{background:linear-gradient(135deg,#EDE1DA,#DCC8BC)}
+.coll-card .card-body{padding:22px 22px 26px}
+.coll-card .mod{font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;font-weight:600;color:var(--terra)}
+.coll-card h3{font-size:1.35rem;margin:6px 0 2px}
+.coll-card .range{font-family:'Playfair Display',serif;font-weight:800;font-size:1.5rem;color:var(--terra)}
+.coll-card ul{list-style:none;margin-top:14px;display:grid;gap:7px}
+.coll-card li{font-size:.8rem;color:var(--ink-soft);display:flex;gap:8px;align-items:baseline}
+.coll-card li b{font-weight:600;color:var(--ink);white-space:nowrap}
+.cat-tag{
+  position:absolute;top:14px;left:14px;z-index:2;
+  background:rgba(51,41,31,.82);color:var(--cream);
+  font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;
+  padding:.5em .9em;border-radius:999px;
+  backdrop-filter:blur(6px)
+}
+.coll-card.intro-card{width:400px;display:flex;flex-direction:column;justify-content:center;background:var(--ink);border:none;color:var(--cream);padding:34px 30px}
+.coll-card.intro-card h3{color:var(--cream);font-size:1.7rem}
+.coll-card.intro-card p{color:#CDBFA9;font-size:.95rem;margin-top:12px}
+.coll-card.intro-card .byline{color:var(--gold);font-family:'Playfair Display',serif;font-style:italic;font-size:1rem;margin-top:14px}
+.coll-card.divider-card{width:250px;background:var(--sage-d);border:none;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:var(--cream);padding:26px}
+.coll-card.divider-card .big{font-size:3.4rem}
+.coll-card.divider-card h3{color:var(--cream);margin-top:14px}
+.coll-card.divider-card p{color:#C9D2BC;font-size:.85rem;margin-top:8px}
+.coll-card.end-card{width:300px;background:linear-gradient(160deg,var(--terra),var(--terra-d));border:none;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;padding:26px}
+.coll-card.end-card h3{color:#fff}
+.coll-card.end-card p{color:#F6DFD4;font-size:.9rem;margin-top:10px}
+.coll-card.end-card .sig{color:#fff;font-family:'Playfair Display',serif;font-style:italic;font-size:.9rem;margin-top:14px;opacity:.85}
+#collProgress{height:3px;background:var(--line);margin:26px 6vw 0;border-radius:3px;overflow:hidden}
+#collProgress i{display:block;height:100%;width:100%;background:var(--terra);transform:scaleX(0);transform-origin:left}
+.coll-hint{font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft);margin:14px 6vw 0;font-weight:500}
+
+/* ============================================================
+   CH5 — PROSPERITY LOOP (pinned circle)
+   ============================================================ */
+#loop{background:var(--dark);color:var(--cream);height:100vh;padding:0;overflow:hidden}
+.loop-pin{height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px}
+.loop-head{text-align:center;padding:0 6vw}
+.loop-head h2{color:var(--cream);font-size:clamp(1.8rem,3.4vw,2.8rem)}
+.loop-head .lead{font-family:'Playfair Display',serif;font-style:italic;color:#CDBFA9;margin-top:6px}
+.cycle-stage{position:relative;width:min(86vw,620px);aspect-ratio:1}
+#cycleSvg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.ring-deco{fill:none;stroke:rgba(201,154,60,.22);stroke-width:1.6;stroke-dasharray:4 10;transform-origin:350px 350px;animation:spin 80s linear infinite}
+.ring-progress{fill:none;stroke:var(--terra);stroke-width:3.5;stroke-linecap:round;transform:rotate(-90deg);transform-origin:350px 350px}
+.cycle-spoke{stroke:rgba(232,220,200,.28);stroke-width:1.6}
+.cycle-node{
+  position:absolute;transform:translate(-50%,-50%);width:118px;text-align:center;
+  background:var(--dark2);border:1px solid rgba(201,154,60,.3);border-radius:18px;padding:14px 10px
+}
+.cycle-node .step{
+  position:absolute;top:-11px;left:50%;transform:translateX(-50%);
+  background:var(--gold);color:var(--dark);font-size:.68rem;font-weight:600;
+  width:22px;height:22px;border-radius:50%;display:grid;place-items:center
+}
+.cycle-node .ic{font-size:1.7rem;display:block}
+.cycle-node b{display:block;font-family:'Playfair Display',serif;font-size:1rem;color:var(--cream);margin-top:4px}
+.cycle-node i{display:block;font-style:normal;font-size:.66rem;color:#BBA98D;margin-top:3px;line-height:1.4}
+.cycle-center{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:158px;height:158px;border-radius:50%;background:var(--terra);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+  box-shadow:0 0 0 12px rgba(192,91,60,.14),0 0 0 26px rgba(192,91,60,.06)
+}
+.cycle-center .ic{font-size:2.6rem}
+.cycle-center b{font-family:'Playfair Display',serif;font-size:.95rem;color:#fff;margin-top:6px;line-height:1.25}
+@media(max-width:640px){
+  .cycle-node{width:88px;padding:10px 6px;border-radius:14px}
+  .cycle-node i{display:none}
+  .cycle-node b{font-size:.8rem}
+  .cycle-center{width:120px;height:120px}
+}
+
+/* ============================================================
+   CH6 — MATH
+   ============================================================ */
+.math-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,5vw,70px);align-items:start}
+.panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(24px,3vw,38px);box-shadow:0 12px 32px rgba(51,41,31,.07)}
+.panel h3{font-size:1.35rem;margin-bottom:6px}
+.panel .psub{font-size:.85rem;color:var(--ink-soft);margin-bottom:26px}
+.stacked{height:62px;border-radius:14px;overflow:hidden;display:flex;gap:3px;margin-bottom:22px}
+.seg{height:100%;border-radius:6px}
+.seg.s-fee{background:#A79B8B}
+.seg.s-mat{background:#D9C6A5}
+.seg.s-art{background:var(--terra)}
+.seg.s-fund{background:var(--sage)}
+.seg-legend .row{
+  display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--ink-soft);
+  padding:9px 0;border-bottom:1px dashed var(--line);padding-bottom:10px
+}
+.seg-legend .row:last-child{border:none}
+.seg-legend .sw{display:inline-block;width:12px;height:12px;border-radius:4px;margin-right:9px;vertical-align:-1px}
+.seg-legend b{font-family:'Playfair Display',serif;font-size:1.15rem}
+.math-note{
+  margin-top:26px;background:rgba(124,139,111,.12);border-left:4px solid var(--sage);
+  border-radius:0 12px 12px 0;padding:16px 20px;font-size:.92rem;color:var(--ink-soft)
+}
+#incomeChart{width:100%;height:auto}
+#incPath{fill:none;stroke:var(--terra);stroke-width:4;stroke-linecap:round}
+#incArea{fill:url(#incGrad);opacity:.9}
+.inc-dot{fill:#fff;stroke:var(--terra);stroke-width:3}
+.inc-lbl{font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;fill:var(--ink)}
+.inc-lbl.sm{font-size:11px;font-weight:400;fill:var(--ink-soft)}
+.inc-grid{stroke:var(--line);stroke-width:1}
+@media(max-width:880px){.math-grid{grid-template-columns:1fr}}
+
+/* ============================================================
+   CH7 — PARTNERSHIP
+   ============================================================ */
+#partnership{background:linear-gradient(180deg,#EEF0E4,#F7F1E6)}
+.quote-block{
+  max-width:820px;margin:0 auto 60px;text-align:center;padding:40px 34px;
+  background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 14px 36px rgba(51,41,31,.07)
+}
+.quote-block p{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1.15rem,2.4vw,1.55rem);line-height:1.5}
+.quote-block cite{display:block;margin-top:18px;font-style:normal;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--terra)}
+.mission-rows{display:grid;gap:16px;margin-bottom:60px}
+.m-row{
+  display:grid;grid-template-columns:1fr 44px 1fr;align-items:center;gap:14px;
+  background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 24px
+}
+.m-row .m-pill{
+  background:var(--sage-d);color:#fff;font-size:.8rem;font-weight:500;letter-spacing:.05em;
+  padding:.55em 1em;border-radius:999px;text-align:center
+}
+.m-row .m-arrow{text-align:center;color:var(--terra);font-size:1.2rem}
+.m-row .m-del{font-size:.95rem}
+.m-row .m-del b{font-weight:600;color:var(--terra-d)}
+.infra{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:64px}
+.roles{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.role{
+  background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 22px;text-align:center;
+  transition:transform .35s
+}
+.role:hover{transform:translateY(-6px)}
+.role .ri{font-size:2rem}
+.role b{display:block;font-family:'Playfair Display',serif;font-size:1.1rem;margin:10px 0 6px}
+.role p{font-size:.82rem;color:var(--ink-soft)}
+.sdg-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:56px}
+.sdg{
+  display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);
+  border-radius:12px;padding:10px 16px;font-size:.8rem;font-weight:500
+}
+.sdg i{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;color:#fff;font-style:normal;font-weight:600;font-size:.72rem}
+.bigline{
+  text-align:center;margin-top:70px;font-family:'Playfair Display',serif;font-style:italic;
+  font-size:clamp(1.4rem,3vw,2rem)
+}
+.bigline b{color:var(--terra);font-weight:700}
+@media(max-width:880px){
+  .roles{grid-template-columns:1fr 1fr}
+  .infra{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .roles{grid-template-columns:1fr}
+  .m-row{grid-template-columns:1fr}
+  .m-row .m-arrow{transform:rotate(90deg)}
+}
+
+/* ============================================================
+   CH8 — ROADMAP
+   ============================================================ */
+.road{position:relative;max-width:900px;margin:0 auto;padding:10px 0}
+.road-line{position:absolute;left:50%;top:0;bottom:0;width:3px;background:var(--terra);border-radius:3px;transform-origin:top}
+.phase{position:relative;width:calc(50% - 46px);margin-bottom:54px}
+.phase:nth-child(odd){margin-left:auto}
+.phase .p-dot{
+  position:absolute;top:8px;width:20px;height:20px;border-radius:50%;background:var(--terra);
+  border:4px solid var(--cream);box-shadow:0 0 0 3px var(--terra)
+}
+.phase:nth-child(odd) .p-dot{left:-56px}
+.phase:nth-child(even) .p-dot{right:-56px}
+.phase .p-card{
+  background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 26px;
+  box-shadow:0 12px 30px rgba(51,41,31,.07)
+}
+.phase .p-tag{font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;font-weight:600;color:var(--gold)}
+.phase h3{font-size:1.45rem;margin:6px 0 4px}
+.phase .p-time{font-size:.78rem;color:var(--terra);font-weight:500;margin-bottom:12px}
+.phase ul{list-style:none;display:grid;gap:7px}
+.phase li{font-size:.88rem;color:var(--ink-soft);padding-left:20px;position:relative}
+.phase li::before{content:"✦";position:absolute;left:0;color:var(--sage);font-weight:600}
+@media(max-width:720px){
+  .road-line{left:14px}
+  .phase{width:calc(100% - 50px);margin-left:50px !important}
+  .phase .p-dot{left:-42px !important;right:auto !important}
+}
+
+/* ============================================================
+   CH9 — ASK (dark warm)
+   ============================================================ */
+#ask{background:linear-gradient(165deg,#4A2E20,#26211C 60%);color:var(--cream);text-align:center}
+#ask .chap-no{color:var(--gold);border-color:var(--gold);background:rgba(201,154,60,.08)}
+.ask-title{
+  font-family:'Playfair Display',serif;font-weight:800;color:var(--cream);
+  font-size:clamp(2.2rem,5.5vw,4.2rem);line-height:1.15;max-width:900px;margin:0 auto
+}
+.ask-title em{font-style:italic;font-weight:500;color:var(--gold)}
+.ask-sub{font-family:'Playfair Display',serif;font-style:italic;color:#D8C7B2;font-size:clamp(1.05rem,2.2vw,1.4rem);margin:24px auto 60px;max-width:640px}
+.ask-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:64px}
+.ask-card{
+  background:rgba(247,241,230,.06);border:1px solid rgba(201,154,60,.3);border-radius:20px;
+  padding:34px 26px;text-align:center
+}
+.ask-card .ai{font-size:2rem}
+.ask-card b{display:block;font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--cream);margin:12px 0 6px}
+.ask-card p{font-size:.85rem;color:#C9B7A0}
+.contact-box{
+  display:inline-block;background:rgba(247,241,230,.08);border:1px dashed rgba(201,154,60,.5);
+  border-radius:20px;padding:28px 44px;font-size:.95rem;color:#E4D6C2
+}
+.contact-box b{color:var(--gold);font-weight:600}
+.contact-box .name{
+  display:block;font-family:'Playfair Display',serif;font-size:1.5rem;
+  color:var(--cream);font-weight:700;margin-bottom:4px;letter-spacing:.01em
+}
+.contact-box .title{
+  display:block;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:0;font-weight:500
+}
+.final-line{margin-top:60px;font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1.3rem,2.6vw,1.8rem);color:var(--cream)}
+@media(max-width:760px){.ask-grid{grid-template-columns:1fr}}
+
+/* ---------------- footer ---------------- */
+footer{background:var(--dark);color:#8D7F6C;text-align:center;padding:34px 6vw;font-size:.75rem;letter-spacing:.05em}
+footer b{color:#C4B49B;font-weight:500}
+footer .sig{color:var(--gold);font-family:'Playfair Display',serif;font-style:italic;font-size:.9rem;display:block;margin-top:8px}
+</style>
+</head>
+<body>
+
+<!-- ====== THREAD SPINE (built by JS) ====== -->
+<nav id="spine" aria-label="Chapters">
+  <div class="thread"></div>
+  <div class="thread-fill" id="threadFill"></div>
+  <div class="ball" id="yarnBall"></div>
+  <div class="dots" id="spineDots"></div>
+</nav>
+
+<!-- ====== HERO ====== -->
+<header class="hero" id="intro" data-title="Begin">
+  <div class="hero-rings" aria-hidden="true"><span></span><span></span><span></span></div>
+  <p class="eyebrow">Follow the Thread · A Proposal for TT Global Foundation</p>
+  <h1 class="hero-title">
+    <span class="line"><span>Turning Village Hands</span></span>
+    <span class="line"><span>into a <em>Global Brand.</em></span></span>
+  </h1>
+  <p class="hero-sub">A journey from local craftsmanship to worldwide recognition — beginning in one small village, and ending in homes across America &amp; Europe.</p>
+  <p class="hero-byline">A proposal by <b>Tayyeba Khan</b></p>
+  <div class="scroll-cue">Scroll to begin<span class="cue-arrow">↓</span></div>
+</header>
+
+<div class="stitch" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 30 Q 75 5 150 30 T 300 30 T 450 30 T 600 30 T 750 30 T 900 30 T 1050 30 T 1200 30"/></svg></div>
+
+<!-- ======== CH 1 — THE VILLAGE ======== -->
+<section id="village" data-title="The Village">
+  <div class="container">
+    <div class="chap-head reveal">
+      <span class="chap-no">Chapter 01</span>
+      <h2>The Village</h2>
+      <p class="lead">Where every story in this proposal begins.</p>
+    </div>
+    <div class="two-col">
+      <div class="reveal">
+        <p>Every morning, the children of our village walk to school past the same fields their grandparents knew. They carry notebooks, dreams, and the quiet hope that learning will open a door somewhere far away.</p>
+        <p>Their mothers carry something else: <strong style="font-weight:500">generations of craft in their hands</strong> — weaving, embroidery, and crochet passed down like an heirloom, practised quietly at home between all the work a household demands.</p>
+      </div>
+      <div class="reveal">
+        <p>Yet in rural Pakistan, fewer than one in five women earn any income of their own. The talent is real. The demand exists — on the other side of the world. What is missing is the bridge between the two.</p>
+        <p>This proposal is that bridge. And like everything worth making, it is made one stitch at a time.</p>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-card reveal"><div class="big"><span data-count="20" data-prefix="~" data-suffix="%">~20%</span></div><div class="lbl">rural women in the labour force</div></div>
+      <div class="stat-card reveal"><div class="big"><span data-count="3" data-suffix=" generations">3 generations</span></div><div class="lbl">of craft heritage in every home</div></div>
+      <div class="stat-card reveal"><div class="big"><span data-count="1">1</span></div><div class="lbl">teacher, ready to begin</div></div>
+    </div>
+    <p class="pullquote reveal">The problem was never a lack of skill. It was a lack of access.</p>
+  </div>
+</section>
+
+<!-- ======== THE TEACHER — the hand behind the thread ======== -->
+<!--
+  ┌─────────────────────────────────────────────────────────────┐
+  │  📸 IMAGE SWAP — Portrait of Tayyeba Khan                    │
+  │  Replace the src="" below with her real portrait photo.      │
+  │  Recommended: 440 × 440 px (square), JPG/WebP, < 100 KB.     │
+  │  If missing, a 👩‍🎨 emoji gracefully falls back in place.      │
+  └─────────────────────────────────────────────────────────────┘
+-->
+<section id="teacher" class="teacher-sec" data-title="The Teacher">
+  <div class="container">
+    <div class="teacher-wrap reveal">
+      <span class="chap-no">The Hand Behind the Thread</span>
+
+      <div class="teacher-portrait">
+        <img src=""
+             alt="Portrait of Tayyeba Khan — crochet artisan, fashion designer, embroidery specialist"
+             loading="lazy"
+             onerror="this.style.display='none';this.parentNode.classList.add('no-photo')">
+        <span class="portrait-badge">12+ yrs</span>
+      </div>
+
+      <h2 class="teacher-name">Tayyeba Khan</h2>
+      <p class="teacher-role">Crochet Artisan · Fashion Designer · Embroidery Specialist</p>
+
+      <p class="teacher-quote">"I learned to crochet at my grandmother's knee. Every stitch in this proposal carries her hands — and mine. This is how we pass it on."</p>
+
+      <div class="cred-pills">
+        <span><i>🧶</i>Crochet</span>
+        <span><i>✂️</i>Fashion Design</span>
+        <span><i>🪡</i>Embroidery</span>
+        <span><i>📚</i>12+ Years of Craft</span>
+      </div>
+
+      <p class="teacher-sig">Tayyeba Khan, Programme Designer</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======== CH 2 — THE HIDDEN TREASURE (proof chips with product images) ======== -->
+<section id="treasure" data-title="The Treasure">
+  <div class="container">
+    <div class="chap-head reveal">
+      <span class="chap-no">Chapter 02</span>
+      <h2>The Hidden Treasure</h2>
+      <p class="lead">The skill already lives here — and the world already pays for it.</p>
+    </div>
+    <div class="two-col">
+      <div class="reveal">
+        <p>Before writing a single line of this proposal, we studied the market. We collected <strong style="font-weight:500">60 real product listings</strong> from Etsy's American and European marketplace — bags and baby wear, crocheted by hand, priced by real buyers' behaviour.</p>
+      </div>
+      <div class="reveal">
+        <p>Every price below is a <strong style="font-weight:500">live market fact</strong> from that study. None of them are our ambitions. All of them are our opportunity.</p>
+      </div>
+    </div>
+    <div class="chip-grid">
+      <div class="chip reveal">
+        <div class="chip-img">
+          <!-- 📸 REPLACE: Handmade Crochet Tote product photo -->
+          <img src="./images/chip-tote-206.png"
+               alt="Handmade crochet tote bag" loading="lazy"
+               onerror="this.style.display='none';this.parentNode.querySelector('.fallback').style.display='block'">
+          <span class="fallback" style="display:none">🧺</span>
+        </div>
+        <div class="nm">Handmade Crochet Tote</div>
+        <div class="pr">$206</div>
+        <div class="src">Etsy · USA</div>
+      </div>
+      <div class="chip reveal">
+        <div class="chip-img">
+          <img src="./images/chip-rose-73.png"
+               alt="Rose flower crochet handbag" loading="lazy"
+               onerror="this.style.display='none';this.parentNode.querySelector('.fallback').style.display='block'">
+          <span class="fallback" style="display:none">🌹</span>
+        </div>
+        <div class="nm">Rose Flower Handbag</div>
+        <div class="pr">$73</div>
+        <div class="src">Etsy · Pakistan-made</div>
+      </div>
+      <div class="chip reveal">
+        <div class="chip-img">
+          <img src="./images/chip-baby-dress-147.png"
+               alt="Baby heirloom crochet dress" loading="lazy"
+               onerror="this.style.display='none';this.parentNode.querySelector('.fallback').style.display='block'">
+          <span class="fallback" style="display:none">👗</span>
+        </div>
+        <div class="nm">Baby Heirloom Dress</div>
+        <div class="pr">$147</div>
+        <div class="src">Etsy · USA</div>
+      </div>
+      <div class="chip reveal">
+        <div class="chip-img">
+          <img src="./images/chip-market-bag-75.png"
+               alt="French market net bag" loading="lazy"
+               onerror="this.style.display='none';this.parentNode.querySelector('.fallback').style.display='block'">
+          <span class="fallback" style="display:none">👜</span>
+        </div>
+        <div class="nm">French Market Bag</div>
+        <div class="pr">$75</div>
+        <div class="src">Etsy · Europe</div>
+      </div>
+      <div class="chip reveal">
+        <div class="chip-img">
+          <img src="./images/chip-phone-bag-38.png"
+               alt="Crochet phone bag" loading="lazy"
+               onerror="this.style.display='none';this.parentNode.querySelector('.fallback').style.display='block'">
+          <span class="fallback" style="display:none">📱</span>
+        </div>
+        <div class="nm">Crochet Phone Bag</div>
+        <div class="pr">$26–39</div>
+        <div class="src">Etsy · USA</div>
+      </div>
+    </div>
+    <div style="text-align:center">
+      <p class="kicker reveal">We don't need to import a skill. We need to unlock the one already here.</p>
+    </div>
+  </div>
+</section>
+
+<div class="stitch" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 30 Q 75 5 150 30 T 300 30 T 450 30 T 600 30 T 750 30 T 900 30 T 1050 30 T 1200 30"/></svg></div>
+
+<!-- ======== CH 3 — THE WORLD IS WAITING (dark) ======== -->
+<section id="world" class="dark-sec" data-title="The World">
+  <div class="container">
+    <div class="chap-head reveal">
+      <span class="chap-no">Chapter 03</span>
+      <h2>The World Is Waiting</h2>
+      <p class="lead">While we stitched in silence, the world developed an appetite.</p>
+    </div>
+    <div class="metric-grid">
+      <div class="metric reveal"><div class="num"><span data-count="750" data-prefix="$" data-suffix="B">$750B</span></div><div class="cap">global handicrafts market today</div></div>
+      <div class="metric reveal"><div class="num"><span data-count="1.2" data-prefix="$" data-suffix="T" data-dec="1">$1.2T</span></div><div class="cap">projected market by 2030</div></div>
+      <div class="metric reveal"><div class="num"><span data-count="90" data-suffix="M+">90M+</span></div><div class="cap">active buyers on Etsy alone</div></div>
+      <div class="metric reveal"><div class="num"><span data-count="78" data-suffix="%">78%</span></div><div class="cap">of Western consumers pay a premium for ethical, sustainable goods</div></div>
+    </div>
+    <div class="chart-wrap">
+      <div class="reveal">
+        <p style="font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--gold);margin-bottom:18px">Global Handicraft Market · $ Billions</p>
+        <div class="bars">
+          <div class="bar"><b>2020</b><span class="v">$640</span><i style="height:53%"></i></div>
+          <div class="bar"><b>2023</b><span class="v">$750</span><i style="height:62%"></i></div>
+          <div class="bar"><b>2026</b><span class="v">$905</span><i style="height:75%"></i></div>
+          <div class="bar"><b>2028</b><span class="v">$1,060</span><i style="height:88%"></i></div>
+          <div class="bar"><b>2030</b><span class="v">$1,200</span><i style="height:100%"></i></div>
+        </div>
+      </div>
+      <ul class="why-list">
+        <li class="reveal"><span class="wi">🧵</span><div><b>Slow fashion movement</b>Western buyers are actively rejecting mass-produced fast fashion.</div></li>
+        <li class="reveal"><span class="wi">🌸</span><div><b>Cottagecore boom</b>Crochet went viral — billions of views across TikTok &amp; Pinterest.</div></li>
+        <li class="reveal"><span class="wi">🎁</span><div><b>Story-driven gifting</b>"Made by a village artisan" is not a footnote — it is the selling point.</div></li>
+        <li class="reveal"><span class="wi">🌿</span><div><b>Eco values</b>Natural cotton, raffia &amp; reusable bags align with sustainability goals.</div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="stitch" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 30 Q 75 5 150 30 T 300 30 T 450 30 T 600 30 T 750 30 T 900 30 T 1050 30 T 1200 30"/></svg></div>
+
+<!-- ======== CH 4 — THE COLLECTION (horizontal scroll, product images) ======== -->
+<section id="collection" data-title="The Collection">
+  <div class="coll-pin">
+    <div class="coll-head">
+      <span class="chap-no">Chapter 04</span>
+      <h2>Beauty with a Curriculum Inside</h2>
+      <p class="lead">Fifteen product families — each one a complete training module, market-validated with real Western prices.</p>
+    </div>
+    <div id="collTrack"><!-- cards rendered by JS --></div>
+    <div id="collProgress"><i></i></div>
+    <p class="coll-hint">Keep scrolling — the shelf unrolls</p>
+  </div>
+</section>
+
+<!-- ======== CH 5 — THE PROSPERITY LOOP (pinned) ======== -->
+<section id="loop" class="dark-sec" data-title="The Loop">
+  <div class="loop-pin">
+    <div class="loop-head">
+      <span class="chap-no">Chapter 05</span>
+      <h2>This Is Not Charity. It's a Loop That Feeds Itself.</h2>
+      <p class="lead">One village. Six steps. Endless turns.</p>
+    </div>
+    <div class="cycle-stage" id="cycleStage">
+      <svg id="cycleSvg" viewBox="0 0 700 700" aria-hidden="true">
+        <circle class="ring-deco" cx="350" cy="350" r="205"/>
+        <circle class="ring-progress" id="ringProgress" cx="350" cy="350" r="205"/>
+      </svg>
+      <div class="cycle-center"><span class="ic">🧶</span><b>The Prosperity Loop</b></div>
+      <!-- nodes + spokes rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<div class="stitch" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 30 Q 75 5 150 30 T 300 30 T 450 30 T 600 30 T 750 30 T 900 30 T 1050 30 T 1200 30"/></svg></div>
+
+<!-- ======== CH 6 — THE MATH ======== -->
+<section id="math" data-title="The Math">
+  <div class="container">
+    <div class="chap-head reveal">
+      <span class="chap-no">Chapter 06</span>
+      <h2>One Bag. One Family. Every Single Time.</h2>
+      <p class="lead">The arithmetic of dignity — where every dollar of a Western price lands.</p>
+    </div>
+    <div class="math-grid">
+      <div class="panel reveal">
+        <h3>Inside a $100 Export Bag</h3>
+        <p class="psub">Typical breakdown of one handmade piece sold on Etsy or Amazon</p>
+        <div class="stacked">
+          <div class="seg s-fee" data-w="12"></div>
+          <div class="seg s-mat" data-w="15"></div>
+          <div class="seg s-art" data-w="58"></div>
+          <div class="seg s-fund" data-w="15"></div>
+        </div>
+        <div class="seg-legend">
+          <div class="row"><span class="sw" style="background:#A79B8B"></span>Platform &amp; payment fees<b>$<span data-count="12">12</span></b></div>
+          <div class="row"><span class="sw" style="background:#D9C6A5"></span>Cotton, lining &amp; materials<b>$<span data-count="15">15</span></b></div>
+          <div class="row"><span class="sw" style="background:#C05B3C"></span><strong style="font-weight:600">The artisan family earns</strong><b style="color:var(--terra)">$<span data-count="58">58</span></b></div>
+          <div class="row"><span class="sw" style="background:#7C8B6F"></span>Program &amp; training fund<b>$<span data-count="15">15</span></b></div>
+        </div>
+        <p class="math-note">💡 Small items count too: phone bags sell at $26–39 and take only 1–2 days — a beginner earning <strong style="font-weight:600">$100+/month from home</strong> within her first season.</p>
+      </div>
+      <div class="panel reveal">
+        <h3>One Family's Income Journey</h3>
+        <p class="psub">Projected monthly artisan income · USD</p>
+        <svg id="incomeChart" viewBox="0 0 600 320">
+          <defs>
+            <linearGradient id="incGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#C05B3C" stop-opacity=".28"/>
+              <stop offset="100%" stop-color="#C05B3C" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <line class="inc-grid" x1="60" y1="280" x2="580" y2="280"/>
+          <line class="inc-grid" x1="60" y1="215" x2="580" y2="215"/>
+          <line class="inc-grid" x1="60" y1="150" x2="580" y2="150"/>
+          <line class="inc-grid" x1="60" y1="85"  x2="580" y2="85"/>
+          <path id="incArea" d="M60 280 L190 175 L320 123 L450 91 L580 49 L580 280 Z"/>
+          <path id="incPath" d="M60 280 L190 175 L320 123 L450 91 L580 49"/>
+          <circle class="inc-dot" cx="60"  cy="280" r="6"/>
+          <circle class="inc-dot" cx="190" cy="175" r="6"/>
+          <circle class="inc-dot" cx="320" cy="123" r="6"/>
+          <circle class="inc-dot" cx="450" cy="91"  r="6"/>
+          <circle class="inc-dot" cx="580" cy="49"  r="6"/>
+          <text class="inc-lbl" x="60"  y="305" text-anchor="middle">Start</text>
+          <text class="inc-lbl" x="190" y="155" text-anchor="middle">$100</text>
+          <text class="inc-lbl" x="320" y="103" text-anchor="middle">$150</text>
+          <text class="inc-lbl" x="450" y="71"  text-anchor="middle">$180</text>
+          <text class="inc-lbl" x="580" y="30"  text-anchor="end">$220+</text>
+          <text class="inc-lbl sm" x="190" y="305" text-anchor="middle">Month 6</text>
+          <text class="inc-lbl sm" x="320" y="305" text-anchor="middle">Month 12</text>
+          <text class="inc-lbl sm" x="450" y="305" text-anchor="middle">Month 18</text>
+          <text class="inc-lbl sm" x="580" y="305" text-anchor="middle">Month 24</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CH 7 — THE PARTNERSHIP ===== -->
+<section id="partnership" data-title="Partnership">
+  <div class="container">
+    <div class="chap-head reveal" style="text-align:center;margin-left:auto;margin-right:auto">
+      <span class="chap-no">Chapter 07</span>
+      <h2>Two Stories. One Thread.</h2>
+      <p class="lead">This project was designed to complete a mission already in motion.</p>
+    </div>
+    <div class="quote-block reveal">
+      <p>“In rural communities, women often face barriers to accessing income-earning opportunities and skill development programs, limiting their economic empowerment.”</p>
+      <cite>— TT Global Foundation, Gender Equality programme</cite>
+    </div>
+    <div class="mission-rows">
+      <div class="m-row reveal"><span class="m-pill">Community Development</span><span class="m-arrow">→</span><span class="m-del">A village prosperity engine: <b>income generated locally, exported globally.</b></span></div>
+      <div class="m-row reveal"><span class="m-pill">Digital Literacy</span><span class="m-arrow">→</span><span class="m-del">Artisans learn <b>e-commerce, photography &amp; online selling</b> — digital skills with a paycheck attached.</span></div>
+      <div class="m-row reveal"><span class="m-pill">Gender Equality</span><span class="m-arrow">→</span><span class="m-del">Women earn <b>from home, around family duties</b> — the exact barrier your foundation set out to remove.</span></div>
+    </div>
+    <div class="infra">
+      <div class="stat-card reveal"><div class="big"><span data-count="118">118</span></div><div class="lbl">technical schools you've already empowered across Punjab</div></div>
+      <div class="stat-card reveal"><div class="big"><span data-count="50" data-suffix="%">50%</span></div><div class="lbl">of them women-only colleges</div></div>
+      <div class="stat-card reveal"><div class="big"><span data-count="2007">2007</span></div><div class="lbl">building resilient communities ever since</div></div>
+    </div>
+    <div class="roles">
+      <div class="role reveal"><span class="ri">🏛️</span><b>TT Global Foundation</b><p>brings the centres, credibility &amp; community trust</p></div>
+      <div class="role reveal"><span class="ri">🎓</span><b>Tayyeba Khan</b><p>brings 12+ years of crochet, fashion design &amp; embroidery — plus the full curriculum</p></div>
+      <div class="role reveal"><span class="ri">🧶</span><b>Village Families</b><p>bring the craft, the hands &amp; the heart</p></div>
+      <div class="role reveal"><span class="ri">🌍</span><b>The Global Market</b><p>brings demand — 90M+ buyers waiting</p></div>
+    </div>
+    <div class="sdg-row reveal">
+      <span class="sdg"><i style="background:#E5243B">1</i>No Poverty</span>
+      <span class="sdg"><i style="background:#C5192D">4</i>Quality Education</span>
+      <span class="sdg"><i style="background:#FF3A21">5</i>Gender Equality</span>
+      <span class="sdg"><i style="background:#A21942">8</i>Decent Work &amp; Growth</span>
+    </div>
+    <p class="bigline reveal">You built the centres. <b>I bring the engine.</b></p>
+  </div>
+</section>
+
+<!-- ==== CH 8 — THE ROADMAP ==== -->
+<section id="roadmap" data-title="Roadmap">
+  <div class="container">
+    <div class="chap-head reveal" style="text-align:center;margin-left:auto;margin-right:auto">
+      <span class="chap-no">Chapter 08</span>
+      <h2>Three Steps to Tomorrow</h2>
+      <p class="lead">Small enough to start this season. Big enough to change a village.</p>
+    </div>
+    <div class="road">
+      <div class="road-line" id="roadLine"></div>
+
+      <div class="phase">
+        <span class="p-dot"></span>
+        <div class="p-card">
+          <span class="p-tag">Phase 01</span>
+          <h3>The Pilot</h3>
+          <p class="p-time">Months 1–3</p>
+          <ul>
+            <li>10 women trained by Tayyeba Khan in 3 beginner modules</li>
+            <li>Etsy shop live with 20 listed products</li>
+            <li>Photo studio &amp; QC checklist established</li>
+            <li>First export orders shipped to USA / EU</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="phase">
+        <span class="p-dot"></span>
+        <div class="p-card">
+          <span class="p-tag">Phase 02</span>
+          <h3>The Scale</h3>
+          <p class="p-time">Months 4–12</p>
+          <ul>
+            <li>50 women across 15 product modules</li>
+            <li>Amazon Handmade + Payoneer payments added</li>
+            <li>Children of artisans tracked for school retention</li>
+            <li>Monthly artisan income: $100–200 per family</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="phase">
+        <span class="p-dot"></span>
+        <div class="p-card">
+          <span class="p-tag">Phase 03</span>
+          <h3>The Brand</h3>
+          <p class="p-time">Year 2 &amp; beyond</p>
+          <ul>
+            <li>Own village label — "Made in [Village Name]"</li>
+            <li>Custom-order &amp; wholesale export partnerships</li>
+            <li>Training replicated in neighbouring villages</li>
+            <li>A model TT Global Foundation can replicate anywhere</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==== CH 9 — THE ASK ==== -->
+<section id="ask" class="dark-sec" data-title="The Ask">
+  <div class="container">
+    <div class="chap-head reveal" style="text-align:center;margin:0 auto 40px">
+      <span class="chap-no">Chapter 09 · Final</span>
+    </div>
+    <h2 class="ask-title reveal">Every masterpiece begins with a single <em>thread.</em></h2>
+    <p class="ask-sub reveal">This one begins with a yes.</p>
+    <div class="ask-grid">
+      <div class="ask-card reveal"><span class="ai">🤝</span><b>Partnership &amp; Mentorship</b><p>Your guidance, my execution — a joint programme under the Foundation's umbrella.</p></div>
+      <div class="ask-card reveal"><span class="ai">🏫</span><b>A Skills Centre</b><p>Access to one training space for cohorts, quality checks &amp; the photo studio.</p></div>
+      <div class="ask-card reveal"><span class="ai">🧵</span><b>The First Cohort</b><p>10 women. 90 days. One teacher. The first stitches of the story.</p></div>
+    </div>
+    <div class="contact-box reveal">
+      <span class="name">Tayyeba Khan</span>
+      <span class="title">Crochet Artisan · Fashion Designer · Programme Designer</span>
+    </div>
+    <p class="final-line reveal">Let's weave this story together.</p>
+  </div>
+</section>
+
+<footer>
+  Prepared by <b>Tayyeba Khan</b> for <b>TT Global Foundation</b> · 2026
+  <span class="sig">— with 12+ years of craft, and a lifetime of hope.</span>
+</footer>
+
+<!-- ================= GSAP ================= -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script>
+/* ============================================================
+   MODULES — curriculum designed by Tayyeba Khan
+   ============================================================ */
+const MODULES = [
+  {cat:'BAG', icon:'👜', name:'Tote Bags',            range:'$143–249', learn:'Lining · leather handles · structure', time:'15–20 days / piece', share:'$70–120 / piece',
+   img:'./images/mod-01-tote.png'},
+  {cat:'BAG', icon:'👝', name:'Crossbody Bags',       range:'$27–300',  learn:'Straps · hardware · motif joins',      time:'2–15 days / piece',  share:'$13–145 / piece',
+   img:'./images/mod-02-crossbody.png'},
+  {cat:'BAG', icon:'🛍️', name:'Market & Net Bags',    range:'$60–155',  learn:'Mesh netting · eco materials',         time:'3–7 days / piece',   share:'$30–75 / piece',
+   img:'./images/mod-03-market.png'},
+  {cat:'BAG', icon:'🪣', name:'Bucket Bags',          range:'$56–172',  learn:'Drawstring · base construction',       time:'4–12 days / piece',  share:'$27–83 / piece',
+   img:'./images/mod-04-bucket.png'},
+  {cat:'BAG', icon:'👛', name:'Clutch Bags',          range:'$51–120',  learn:'Evening finish · chains · beads',      time:'3–8 days / piece',   share:'$25–58 / piece',
+   img:'./images/mod-05-clutch.png'},
+  {cat:'BAG', icon:'🎒', name:'Drawstring Bags',      range:'$85–175',  learn:'Cording · suede lining · magnets',     time:'6–12 days / piece',  share:'$40–85 / piece',
+   img:'./images/mod-06-drawstring.png'},
+  {cat:'BAG', icon:'🎒', name:'Backpacks',            range:'$110–145', learn:'Straps · reinforced base · flaps',     time:'8–14 days / piece',  share:'$53–70 / piece',
+   img:'./images/mod-07-backpack.png'},
+  {cat:'BAG', icon:'📱', name:'Phone & Mini Bags',    range:'$26–39',   learn:'Fast makes · colourwork · tassels (entry level)', time:'1–2 days / piece', share:'$12–19 / piece',
+   img:'./images/mod-08-phone.png'},
+  {cat:'BAG', icon:'🧩', name:'Granny Square Bags',   range:'$125–258', learn:'Granny squares · colour theory',       time:'10–20 days / piece', share:'$60–124 / piece',
+   img:'./images/mod-09-granny.png'},
+  {cat:'BAG', icon:'🌾', name:'Raffia & Straw',       range:'$56–195',  learn:'Raffia · straw · summer wear',         time:'4–14 days / piece',  share:'$27–94 / piece',
+   img:'./images/mod-10-raffia.png'},
+  {cat:'BAG', icon:'🌙', name:'Half-Moon Bags',       range:'$54–190',  learn:'Curved shapes · lace · sequins',       time:'3–12 days / piece',  share:'$26–91 / piece',
+   img:'./images/mod-11-halfmoon.png'},
+  {cat:'BABY',icon:'👗', name:'Frocks & Dresses',     range:'$75–147',  learn:'Sizing · organic cotton · heirloom finish', time:'5–10 days / piece', share:'$36–71 / piece',
+   img:'./images/mod-12-baby-dress.png'},
+  {cat:'BABY',icon:'👶', name:'Booties & Sneakers',   range:'$47–76',   learn:'Miniature shaping · soles',            time:'1–2 days / piece',   share:'$22–37 / piece',
+   img:'./images/mod-13-baby-booties.png'},
+  {cat:'BABY',icon:'🧸', name:'Rompers & Onesies',    range:'$44–140',  learn:'Full-body fit · hoods · frills',       time:'3–8 days / piece',   share:'$21–67 / piece',
+   img:'./images/mod-14-baby-romper.png'},
+  {cat:'BABY',icon:'🧥', name:'Cardigans & Sweaters', range:'$50–100',  learn:'Cables · buttons · panels',            time:'3–7 days / piece',   share:'$24–48 / piece',
+   img:'./images/mod-15-baby-cardigan.png'},
+];
+
+/* ============================================================
+   RENDER — the collection shelf (with product images)
+   ============================================================ */
+(function renderCollection(){
+  const track = document.getElementById('collTrack');
+  let html = `
+    <article class="coll-card intro-card">
+      <span class="mod">The Collection</span>
+      <h3>A curriculum, hiding in plain sight as beauty.</h3>
+      <p>Each module is a complete skill path — with a price range validated by real listings in the US &amp; European market. Train a woman in one module, and she has a livelihood.</p>
+      <p class="byline">Curriculum designed by Tayyeba Khan</p>
+      <p style="margin-top:6px;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)">Fifteen modules · Sixty studied listings</p>
+    </article>`;
+
+  MODULES.forEach((m,i)=>{
+    if(m.cat === 'BABY' && !html.includes('divider-card')){
+      html += `
+        <article class="coll-card divider-card">
+          <span class="big">👶</span>
+          <h3>Baby Dreams</h3>
+          <p>The heirloom line — organic cotton, gift-driven, fastest-growing segment in the West.</p>
+        </article>`;
+    }
+    html += `
+      <article class="coll-card">
+        <span class="cat-tag">${m.cat === 'BABY' ? 'Baby Dreams' : 'Bag Collection'}</span>
+        <div class="tile g${i%4}">
+          <span class="tile-emoji">${m.icon}</span>
+          <img src="${m.img}" alt="${m.name}" loading="lazy"
+               onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="mod">Module ${String(i+1).padStart(2,'0')}</span>
+          <h3>${m.name}</h3>
+          <p class="range">${m.range}</p>
+          <ul>
+            <li><b>Learn</b><span>${m.learn}</span></li>
+            <li><b>⏱ Time</b><span>${m.time}</span></li>
+            <li><b>💵 Artisan</b><span>${m.share}</span></li>
+          </ul>
+        </div>
+      </article>`;
+  });
+
+  html += `
+    <article class="coll-card end-card">
+      <span style="font-size:3rem">✨</span>
+      <h3>Custom orders welcome</h3>
+      <p>Every module supports custom colours &amp; made-to-order — the West's favourite way to buy handmade.</p>
+      <p class="sig">— Tayyeba Khan</p>
+    </article>`;
+
+  track.innerHTML = html;
+})();
+
+/* ============================================================
+   RENDER — the prosperity loop
+   ============================================================ */
+(function renderCycle(){
+  const stage = document.getElementById('cycleStage');
+  const svg   = document.getElementById('cycleSvg');
+  const NS    = 'http://www.w3.org/2000/svg';
+
+  const DATA = [
+    {icon:'🎓', t:'Learn',  d:'children in school by day'},
+    {icon:'🧶', t:'Train',  d:'mothers learn the craft'},
+    {icon:'🪡', t:'Create', d:'families crochet at home'},
+    {icon:'🛒', t:'Sell',   d:'Etsy & Amazon, USA–EU'},
+    {icon:'💰', t:'Earn',   d:'fair pay for every piece'},
+    {icon:'🌱', t:'Grow',   d:'fund the school, scale up'},
+  ];
+
+  const R = 270;
+  DATA.forEach((n,i)=>{
+    const a = (-90 + i*60) * Math.PI/180;
+    const x = 350 + R*Math.cos(a);
+    const y = 350 + R*Math.sin(a);
+
+    const line = document.createElementNS(NS,'line');
+    line.setAttribute('x1',350); line.setAttribute('y1',350);
+    line.setAttribute('x2',x);   line.setAttribute('y2',y);
+    line.classList.add('cycle-spoke');
+    const L = Math.hypot(x-350, y-350);
+    line.setAttribute('stroke-dasharray', L);
+    line.dataset.l = L;
+    svg.appendChild(line);
+
+    const el = document.createElement('div');
+    el.className = 'cycle-node';
+    el.style.left = (x/7) + '%';
+    el.style.top  = (y/7) + '%';
+    el.innerHTML = `<span class="step">${i+1}</span><span class="ic">${n.icon}</span><b>${n.t}</b><i>${n.d}</i>`;
+    stage.appendChild(el);
+  });
+
+  const ring = document.getElementById('ringProgress');
+  const C = 2 * Math.PI * 205;
+  ring.setAttribute('stroke-dasharray', C);
+  ring.setAttribute('stroke-dashoffset', 0);
+  ring.dataset.c = C;
+})();
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if(!reduced && window.gsap && window.ScrollTrigger){
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* --- 1. HERO intro --- */
+  const hero = gsap.timeline({defaults:{ease:'power3.out'}});
+  hero.from('.eyebrow',{y:24,opacity:0,duration:.8})
+      .from('.hero-title .line > span',{yPercent:118,duration:1.1,stagger:.14,ease:'power4.out'},.15)
+      .from('.hero-sub',{y:26,opacity:0,duration:.9},.8)
+      .from('.hero-byline',{y:20,opacity:0,duration:.8},1.0)
+      .from('.scroll-cue',{opacity:0,duration:.8},1.2)
+      .from('.hero-rings span',{scale:0,opacity:0,stagger:.16,duration:1.1,ease:'back.out(1.4)'},.3);
+
+  /* --- 2. SPINE progress + yarn ball --- */
+  gsap.fromTo('#threadFill',{scaleY:0},{scaleY:1,ease:'none',
+    scrollTrigger:{trigger:document.body,start:'top top',end:'bottom bottom',scrub:.3}});
+  gsap.fromTo('#yarnBall',{y:0},{y:()=>window.innerHeight-18,ease:'none',
+    scrollTrigger:{trigger:document.body,start:'top top',end:'bottom bottom',scrub:.3,invalidateOnRefresh:true}});
+
+  /* --- 3. generic reveals --- */
+  gsap.utils.toArray('.reveal').forEach(el=>{
+    gsap.from(el,{y:44,opacity:0,duration:1,ease:'power3.out',
+      scrollTrigger:{trigger:el,start:'top 88%',once:true}});
+  });
+
+  /* --- 4. counters --- */
+  gsap.utils.toArray('[data-count]').forEach(el=>{
+    const target = parseFloat(el.dataset.count);
+    const dec    = parseInt(el.dataset.dec||'0');
+    const pre    = el.dataset.prefix||'';
+    const suf    = el.dataset.suffix||'';
+    const final  = el.textContent;
+    const obj    = {v:0};
+    gsap.to(obj,{v:target,duration:1.8,ease:'power2.out',
+      scrollTrigger:{trigger:el,start:'top 86%',once:true},
+      onUpdate:()=>{el.textContent = pre + obj.v.toFixed(dec) + suf;},
+      onComplete:()=>{el.textContent = final;}
+    });
+  });
+
+  /* --- 5. stitch dividers "sew" as you scroll --- */
+  gsap.utils.toArray('.stitch path').forEach(p=>{
+    gsap.fromTo(p,{strokeDashoffset:312},{strokeDashoffset:0,ease:'none',
+      scrollTrigger:{trigger:p.closest('.stitch'),start:'top 95%',end:'top 35%',scrub:true}});
+  });
+
+  /* --- 6. market bars (CH3) --- */
+  gsap.from('.bar i',{scaleY:0,duration:1,stagger:.14,ease:'power3.out',
+    scrollTrigger:{trigger:'.bars',start:'top 85%',once:true}});
+  gsap.from('.bar .v',{opacity:0,y:8,stagger:.14,duration:.5,
+    scrollTrigger:{trigger:'.bars',start:'top 85%',once:true}});
+
+  /* --- 7. HORIZONTAL collection shelf --- */
+  const track = document.getElementById('collTrack');
+  const getDist = () => track.scrollWidth - window.innerWidth;
+
+  gsap.to(track,{x:()=>-getDist(),ease:'none',
+    scrollTrigger:{trigger:'#collection',start:'top top',end:()=>'+='+getDist(),scrub:1,pin:true,invalidateOnRefresh:true,anticipatePin:1}});
+
+  gsap.to('#collProgress i',{scaleX:1,ease:'none',
+    scrollTrigger:{trigger:'#collection',start:'top top',end:()=>'+='+getDist(),scrub:1}});
+
+  /* --- 8. PROSPERITY LOOP (pinned circle) --- */
+  const C = +document.getElementById('ringProgress').dataset.c;
+  const loop = gsap.timeline({scrollTrigger:{trigger:'#loop',start:'top top',end:'+=1700',scrub:1,pin:true,anticipatePin:1}});
+  loop.from('.cycle-center',{scale:0,duration:.5,ease:'back.out(1.6)'})
+      .from('#ringProgress',{attr:{'stroke-dashoffset':C},duration:1.3,ease:'none'},.25)
+      .from('.cycle-spoke',{attr:{'stroke-dashoffset':(i,el)=>+el.dataset.l},duration:.5,stagger:.16,ease:'power2.out'},.5)
+      .from('.cycle-node',{scale:0,opacity:0,duration:.45,stagger:.16,ease:'back.out(1.7)'},.6);
+
+  /* --- 9. stacked $100 bar segments --- */
+  gsap.utils.toArray('.seg').forEach((seg,i)=>{
+    gsap.from(seg,{width:0,duration:.8,delay:i*.22,ease:'power3.out',
+      scrollTrigger:{trigger:'.stacked',start:'top 85%',once:true}});
+  });
+
+  /* --- 10. income line chart draws itself --- */
+  const incPath = document.getElementById('incPath');
+  if(incPath){
+    const L = incPath.getTotalLength();
+    gsap.set(incPath,{strokeDasharray:L,strokeDashoffset:L});
+    gsap.to(incPath,{strokeDashoffset:0,ease:'none',
+      scrollTrigger:{trigger:'#incomeChart',start:'top 80%',end:'top 30%',scrub:1}});
+    gsap.from('#incArea',{opacity:0,duration:1,
+      scrollTrigger:{trigger:'#incomeChart',start:'top 55%',once:true}});
+    gsap.from('.inc-dot',{scale:0,stagger:.15,duration:.4,ease:'back.out(2)',
+      scrollTrigger:{trigger:'#incomeChart',start:'top 60%',once:true},transformOrigin:'center'});
+    gsap.from('.inc-lbl',{opacity:0,stagger:.1,duration:.5,
+      scrollTrigger:{trigger:'#incomeChart',start:'top 60%',once:true}});
+  }
+
+  /* --- 11. roadmap line + phases --- */
+  gsap.from('#roadLine',{scaleY:0,ease:'none',
+    scrollTrigger:{trigger:'.road',start:'top 75%',end:'bottom 60%',scrub:1}});
+  gsap.utils.toArray('.phase').forEach((ph,i)=>{
+    gsap.from(ph,{x:i%2?70:-70,opacity:0,duration:.9,ease:'power3.out',
+      scrollTrigger:{trigger:ph,start:'top 85%',once:true}});
+  });
+
+  /* --- 12. spine active chapter dots --- */
+  const dotsWrap = document.getElementById('spineDots');
+  const secs = gsap.utils.toArray('section[id], header[id]');
+  secs.forEach((sec,i)=>{
+    const a = document.createElement('a');
+    a.className = 'dot';
+    a.href = '#' + sec.id;
+    a.style.top = ((i+1)/(secs.length+1)*100) + '%';
+    a.innerHTML = `<span>${sec.dataset.title||''}</span>`;
+    dotsWrap.appendChild(a);
+
+    ScrollTrigger.create({
+      trigger: sec,
+      start: 'top 50%',
+      end: 'bottom 50%',
+      onToggle: s=>{
+        if(s.isActive){
+          dotsWrap.querySelectorAll('.dot').forEach(d=>d.classList.remove('active'));
+          a.classList.add('active');
+        }
+      }
+    });
+  });
+}
+
+/* refresh after images/fonts settle */
+window.addEventListener('load',()=>{ if(window.ScrollTrigger) ScrollTrigger.refresh(); });
+</script>
+</body>
+</html>
