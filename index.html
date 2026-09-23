@@ -352,10 +352,12 @@ section{position:relative;padding:clamp(84px,13vh,150px) 0}
 .coll-card.intro-card h3{color:var(--cream);font-size:1.7rem}
 .coll-card.intro-card p{color:#CDBFA9;font-size:.95rem;margin-top:12px}
 .coll-card.intro-card .byline{color:var(--gold);font-family:'Playfair Display',serif;font-style:italic;font-size:1rem;margin-top:14px}
-.coll-card.divider-card{width:250px;background:var(--sage-d);border:none;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:var(--cream);padding:26px}
+.coll-card.divider-card{width:270px;background:var(--sage-d);border:none;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;text-align:center;color:var(--cream);padding:22px 22px 26px;overflow:hidden}
 .coll-card.divider-card .big{font-size:3.4rem}
 .coll-card.divider-card h3{color:var(--cream);margin-top:14px}
 .coll-card.divider-card p{color:#C9D2BC;font-size:.85rem;margin-top:8px}
+.divider-photo{width:150px;height:150px;border-radius:50%;overflow:hidden;flex:0 0 auto;border:3px dashed rgba(247,241,230,.7);padding:5px;background:rgba(255,255,255,.08);box-shadow:0 10px 26px rgba(0,0,0,.25)}
+.divider-photo img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
 .coll-card.end-card{width:300px;background:linear-gradient(160deg,var(--terra),var(--terra-d));border:none;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;padding:26px}
 .coll-card.end-card h3{color:#fff}
 .coll-card.end-card p{color:#F6DFD4;font-size:.9rem;margin-top:10px}
@@ -1049,7 +1051,9 @@ const MODULES = [
     if(m.cat === 'BABY' && !html.includes('divider-card')){
       html += `
         <article class="coll-card divider-card">
-          <span class="big">👶</span>
+          <div class="divider-photo">
+            <img src="./images/mod-14-baby-romper.png" alt="Smiling baby in handmade crochet romper — Baby Dreams heirloom line" loading="lazy" onerror="this.style.display='none'">
+          </div>
           <h3>Baby Dreams</h3>
           <p>The heirloom line — organic cotton, gift-driven, fastest-growing segment in the West.</p>
         </article>`;
